@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>节奏大师小游戏</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="Cache-Control" content="max-age=0">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="Description" content="">
+		<meta name="Keywords" content="">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+<body >
+	<div class="game" id="game">
+		<div class="track track1" ></div>
+		<div class="track track2"></div>
+		<div class="track track3">	</div>
+		<div class="track track4"></div>
+		<div class="collection-btn" id="target-btn">
+			<div class="btn btn1 "></div>
+			<div class="btn btn2 "></div>
+			<div class="btn btn3 "></div>
+			<div class="btn btn4 "></div>
+		</div>
+		<div class="start-time"></div>
+		<div class="msg"></div>
+	</div>
+	<div class="mask"></div>
+	<script src="js/Rhythm.js"></script>
+	<script>
+		Rhythm({
+			// 开始倒计时
+			startTime:3,
+			// 游戏时长
+			duration :50,
+			// 音乐地址
+			musicUrl:'./coldplay.mp3'
+		});
+	</script>
+</body></html>
