@@ -1,16 +1,11 @@
-/**
- * @authors huangwengen
- * @date    2021.11.25
- * @version 1.0
- */
-!(function(win){
 
+!(function(win){
 	const Rhythm = function (options) {
 		const config = {
 			//游戏倒计时默认（秒）
 			startTime: 3,
 			//下落间隔时间
-			intervalTime: 200,
+			intervalTime: 1000,
 			//下落间隔速度
 			intervalSpeed: 100,
 			// 下落的速度
@@ -59,7 +54,6 @@
 	// 游戏倒计时
 	Rhythm.prototype.countDown = function (){
 		this.startTimeEle.classList.add(`start${this.options.startTime}`)
-
 		// 判断是否是最后一秒
 		if (this.options.startTime === 0){
 			clearTimeout(this.time)
@@ -99,7 +93,10 @@
 	Rhythm.prototype.createMusic = function (){
 		let audio = document.createElement('audio')
 		audio.src = this.options.musicUrl
-		audio.play()
+		audio.muted = 'muted'
+		audio.onload = function() {
+			audio.play()
+		}
 	}
 
 	// 创建击中音效
@@ -199,6 +196,14 @@
 	Rhythm.prototype.bindEvent = function (){
 		this.targetBtn.addEventListener("click",this.touchNote.bind(this));
 		this.targetBtn.addEventListener("touchstart",this.touchNote.bind(this));
+		const elm = this.msgEle
+		this.msgEle.addEventListener('click', (e)=> {
+			if (e.target.className === 'close') {
+				console.log('关闭')
+				elm.innerHTML = ''
+				elm.style.display = 'none'
+			}
+		})
 	}
 
 	// 开始游戏

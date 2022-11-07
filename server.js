@@ -48,7 +48,7 @@ http.createServer(function (req, res) {
 		}
 	});
 
-}).listen(8090, '10.238.56.74');
+}).listen(8090, '127.0.0.1');
 
 
 console.log("Server running at http://localhost:8090/");

@@ -1,9 +1,3 @@
-@charset "UTF-8";
-/**
- * @authors H君 (qq:262281610)
- * @date    2014-10-17 17:12:51
- * @version 1.0
- */
 body, div, ul, li, a, img, h1, h2, h3, h4, h5, h6, p, input, table, tr, td {
     margin: 0;
     padding: 0;
@@ -36,11 +30,11 @@ i, b {
 .game {
     position: relative;
     margin: 0 auto;
-    max-width: 640px;
-    min-width: 320px;
+    max-width: 375px;
+    /* min-width: 320px; */
     height: 100vh;
     text-align: center;
-    background-image: url(../images/main.jpg);
+    background-image: url(https://pic3.zhuanstatic.com/zhuanzh/47ff1486-cc9b-4bec-9aff-524e75286f09.jpg);
     background-size: cover;
 
 }
@@ -74,7 +68,7 @@ i, b {
 }
 
 .track {
-    background: url(../images/guidao2.png) no-repeat center 0;
+    background: url(https://pic6.zhuanstatic.com/zhuanzh/73bdb238-055b-4384-887c-8134dd9096d0.png) no-repeat center 0;
     position: absolute;
     width: 15%;
     height: 76%;
@@ -83,7 +77,7 @@ i, b {
 }
 
 .track-high {
-    background: url(../images/guidao.png) no-repeat center 0;
+    background: url(https://pic6.zhuanstatic.com/zhuanzh/723dd7f6-8a29-4979-a09d-6819cc7cff06.png) no-repeat center 0;
 }
 
 .track1 {
@@ -125,7 +119,7 @@ i, b {
 .track .target {
     width: 30px;
     height: 30px;
-    background: url(../images/logo.png) no-repeat center center;
+    background: url(https://img1.zhuanstatic.com/common/img/logo-64x64.png) no-repeat center center;
     background-size: 0;
     margin: 0 auto;
     /* -webkit-animation: animation 4s ease-in 0 forwards;  */
@@ -133,7 +127,7 @@ i, b {
     left: 50%;
     margin-left: -15px;
 }
-
+/* 
 .track .btn {
     position: absolute;
     bottom: -5%;
@@ -144,19 +138,16 @@ i, b {
     background: #789D9F;
     border: 5px solid #AFCDD5;
     z-index: 9998;
-}
+} */
 
-.track .btn2, .track .btn3 {
+/* .track .btn2, .track .btn3 {
     bottom: -4%;
-}
+} */
 
-.track-item{
-
-}
 .collection-btn .btn {
     position: absolute;
-    width: 17%;
-    height: 10%;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: #789D9F;
     border: 5px solid #AFCDD5;
@@ -169,19 +160,19 @@ i, b {
 }
 
 .collection-btn .btn1 {
-    left: 4%;
+    left: 6%;
 }
 
 .collection-btn .btn2 {
-    left: 28%;
+    left: 29%;
 }
 
 .collection-btn .btn3 {
-    right: 28%;
+    right: 29%;
 }
 
 .collection-btn .btn4 {
-    right: 4%;
+    right: 6%;
 }
 
 .start-time {
@@ -202,19 +193,19 @@ i, b {
     height: 100%;
 }
 .start-time.start5{
-    background-image: url(../images/down5.png);
+    background-image: url(https://pic4.zhuanstatic.com/zhuanzh/6b95d735-07af-40c0-b7db-b17007e6cf1d.png);
 }
 .start-time.start4{
-    background-image: url(../images/down4.png);
+    background-image: url(https://pic2.zhuanstatic.com/zhuanzh/76668eff-2bec-4b2a-ba1d-7e8d351c55ba.png);
 }
 .start-time.start3{
-    background-image: url(../images/down3.png);
+    background-image: url(https://pic4.zhuanstatic.com/zhuanzh/200611e4-356e-44a4-a676-7b2db924a411.png);
 }
 .start-time.start2{
-    background-image: url(../images/down2.png);
+    background-image: url(https://pic6.zhuanstatic.com/zhuanzh/e360e3cb-9cfc-4b61-ad90-d3091118b17e.png);
 }
 .start-time.start1{
-    background-image: url(../images/down1.png);
+    background-image: url(https://pic4.zhuanstatic.com/zhuanzh/490de967-d079-43e4-ad8d-4f4310349c74.png);
 }
 
 .mask {
